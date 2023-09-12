@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mandelbrot Set</title>
+		<script defer src="./script.js"></script>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<canvas id="mandelbrotCanvas"></canvas>
+		<div id="parameter-wrapper">
+			<h1>Settings</h1>
+			<div>
+				<h3>Zoom</h3>
+				<div class="range-wrapper">
+					<input type="range" name="" id="zoom_inp" max="10000" min="1" value="500" />
+					<div>500</div>
+				</div>
+			</div>
+			<div>
+				<h3>Iterations</h3>
+				<div class="range-wrapper">
+					<input type="range" name="" max="5000" min="1" value="1000" id="iterations_inp" />
+					<div>1000</div>
+				</div>
+			</div>
+			<div>
+				<h3>Center</h3>
+				<div>
+					<h4>x</h4>
+					<div class="range-wrapper">
+						<input type="range" name="" min="-2" value="-0.5" step="0.5" max="2" id="centerx_inp" />
+						<div>-0.5</div>
+					</div>
+
+					<h4>y</h4>
+					<div class="range-wrapper">
+						<input type="range" name="" value="0" min="-2" step="0.5" max="2" id="centery_inp" />
+						<div>0</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<button id="apply_settings" type="button">Apply</button>
+			</div>
+		</div>
+	</body>
+</html>
